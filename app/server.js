@@ -1,7 +1,7 @@
 import express from 'express';
 import routes from './routes';
 import config from './config/constants'
-
+require('dotenv').config();
 const path = require('path')
 
 const cors = require("cors");

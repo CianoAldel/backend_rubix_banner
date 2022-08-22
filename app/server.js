@@ -18,9 +18,12 @@ global.__basedir = __dirname;
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
-var corsOptions = {
-  origin: "http://localhost:3000"
-};
+const corsOptions = {
+  origin:'*', 
+  credentials:true,  
+  optionSuccessStatus:200,
+}
+
 app.use(cors(corsOptions));
 
 

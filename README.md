@@ -8,6 +8,6 @@
 To deploy this project run
 
 ```bash
-  sequelize-auto -o "./models" -d cozy-db -h localhost -u root -p 5432 -x root -e postgres
+  sequelize-auto -o "./models" -d rubix_banner -h db-cozy.clxgylzgj9tx.ap-southeast-1.rds.amazonaws.com -u supercozy -p 5432 -x cozy_db_123 -e postgres --noAlias
 ```
 

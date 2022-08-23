@@ -15,6 +15,7 @@ routes.get("/", (req, res) => {
 
 
 routes.get("/getBannerHome", banner.getBannerHome);
+routes.post("/createBannerHome", banner.createBannerHome);
 
 
 export default routes;

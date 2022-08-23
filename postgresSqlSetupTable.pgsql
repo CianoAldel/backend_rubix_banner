@@ -10,18 +10,19 @@ CREATE TABLE "rubix_banner_home" (
 );
 
 CREATE TABLE "rubix_banner_home_image_badge" (
-    "banner_image_id" SERIAL PRIMARY KEY,
+    "banner_home_image_badge_id" SERIAL PRIMARY KEY,
     "banner_home_id" int,
     "banner_home_image_badge" varchar,
-    CONSTRAINT fk_rubix_banner_home_image_badge_to_rubix_banner_home_key_banner_home_id
+    CONSTRAINT fk_rubix_banner_home_image_badge_to_rubix_banner_home_key_banner_home_image_badge_id
     FOREIGN KEY(banner_home_id) 
     REFERENCES rubix_banner_home(banner_home_id)
 );
+
 CREATE TABLE "rubix_banner_home_image_card" (
-    "banner_image_id" SERIAL PRIMARY KEY,
+    "banner_home_image_card_id" SERIAL PRIMARY KEY,
     "banner_home_id" int,
     "banner_home_image_card" varchar,
-    CONSTRAINT fk_rubix_banner_home_image_card_to_rubix_banner_home_key_banner_home_id
+    CONSTRAINT fk_rubix_banner_home_image_card_to_rubix_banner_home_key_banner_home_image_card_id
     FOREIGN KEY(banner_home_id)
     REFERENCES rubix_banner_home(banner_home_id)
 );

@@ -31,6 +31,7 @@ CREATE TABLE "rubix_banner_store" (
     "banner_store_id" SERIAL PRIMARY KEY,
     "banner_store_title" varchar,
     "banner_store_url" varchar,
+    "banner_store_datetime" varchar,
     "banner_store_image" varchar
 );
 
